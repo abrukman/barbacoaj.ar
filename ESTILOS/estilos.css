@@ -1,0 +1,712 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Encode Sans";
+    color: white;
+    background-color: #37bbed;
+    box-shadow: 0px 5px 5px #50535c;
+    position: fixed;
+    z-index: 2;
+    height: 70px;
+    width: 100vw;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+    padding-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+ h1 {
+     margin: auto;
+     padding: 0 5px;
+ }
+
+.coaj {
+    font-weight: 800;
+    color: black;
+}
+
+.menu {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    display: none;
+    box-sizing: border-box;
+}
+
+.toggle {
+    display: none;
+}
+
+.contenedor {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:stretch;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding-top: 80px;
+}
+
+.construccion {
+    width: 100%;
+    height: 674px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #50535c;
+    background-image: url(../OBRAS/IMAGENES/uocrapresente.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-blend-mode: screen;
+    padding-top: 85px;
+    margin: auto;
+    font-family: "Encode Sans";
+    font-weight: 800;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+    color: #ffffff;
+    text-align: center;
+}
+
+.construccion a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(../OBRAS/IMAGENES/iconovolver-11.svg);
+    font-size: 0;
+}
+
+.construccion a:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    margin: 0 auto;
+    background-image: url(../OBRAS/IMAGENES/iconovolver-12.svg);
+    font-size: 0;
+}
+
+.obra h2 a{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    width: 210px;
+    height: 270px;
+    margin: 10px;
+    background-image: url(../OBRAS/IMAGENES/logo20opacity.svg);
+    background-position: center;
+    background-color: #37bbed;
+    border-radius: 5%;
+    font-family: "Encode Sans";
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0px 0px 1px black;
+}
+
+
+.obra h2 a:hover {
+    position: relative;
+    background-color: #53505c;
+    box-shadow: 2px 2px 5px black;
+    left: 2px;
+    top: 2px;
+}
+
+nav {
+    padding-top: 75px;
+    width: 13%;
+    float: left;
+    background-color: #50535c;
+    box-shadow: 5px 0px 10px #50535c;    
+    position: fixed;
+    float: left;
+    height: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: "Encode Sans";
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;     
+}
+
+nav ul li a:hover {
+    background-color: #aaaa;
+    transition: 0.5s;
+}
+
+nav ul li a:active {
+    color: #37bbed;   
+}
+
+#palabras {
+    width: 87%;
+    box-sizing: border-box;
+    padding: 80px 20px;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.4em;
+    float: left;
+    position: relative;
+    z-index: -1;
+    left: 13%;
+    display: none;  
+}
+
+.palabras {
+    box-sizing: border-box;
+    padding: 80px 20px;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.4em;
+    float: left;
+    position: relative;
+    z-index: -1;
+}
+
+.teclado {
+    height: 500px;
+    overflow: hidden;
+}
+
+#palabras:target {
+    display:block
+}
+
+#letra {
+    width: 87%;
+    box-sizing: border-box;
+    padding: 70px 20px;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.4em;
+    float: left;
+    position: relative;
+    z-index: -1;
+    left: 13%;
+    display: none;
+}
+
+#letra h2{
+    box-sizing:border-box;
+    font-family: "Encode Sans";
+    font-weight: 600;
+    display: block;
+    padding: 20px 0px;
+}
+
+#letra:target {
+    display: block;
+}
+
+.partes {
+    width: 87%;
+    position: relative;
+    left: 13%;
+    z-index: -1;
+    display: none;
+    padding-top: 20px;
+}
+
+#cifrado:target {
+    display: block;
+}
+
+#clarinete:target {
+    display:block;
+}
+
+#saxo:target {
+    display: block;
+}
+
+#trompeta:target {
+    display: block;
+}
+
+#trombonI:target {
+    display:block;
+}
+
+#trombonII:target {
+    display: block;
+}
+
+#teclado:target {
+    display: block;
+}
+
+#bateria:target {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    width: 100vw;
+    margin: auto;
+    background-color: #37bbed;
+    padding: 0.4em;
+    font-family: 'Encode Sans';
+    font-size: 0.6em;
+}
+
+::selection {
+    background-color: #50535c;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .contenedor {
+        width: fit-content;
+        padding: 60px;
+    }
+
+    .contenedorobra {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+
+    }
+
+    
+
+    header {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 0.75em;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle:checked + nav {
+        transition: all 1s ease-in-out;
+        top: 0;
+        
+    }
+
+    nav {
+        width: 100%;
+        padding-top: 55px;
+        height: fit-content;
+        overflow: scroll;
+        z-index: 1;
+        box-shadow: 0px 5px 20px;
+        top: -100%;
+        transition: top 1s ease-in-out;
+
+    }
+
+    nav ul li a {
+        font-family: "Encode Sans";
+        font-weight: 600;
+        font-size: 1em;
+        height: 100%;
+        text-align: center;    
+    }
+
+    #palabras:target {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        padding: 60px 20px;
+    }
+    
+    #letra:target {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        margin: auto;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .partes {
+        width: 100%;
+        padding-top: 60px;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        z-index: -1;
+        display: none;
+    }
+
+    .teclado {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .palabras {
+        box-sizing: border-box;
+        padding-top: 5px;
+        font-family: "Roboto";
+        font-size: 1em;
+        font-weight: 100;
+        text-align: justify;
+        line-height: 1.4em;
+        float: left;
+        position: relative;
+        z-index: -1;
+    }
+
+}*/
+
+header {
+    height: 4em;
+}
+
+.barbacoaj {
+    background-image: url(../OBRAS/IMAGENES/isologobarbacoaj.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    height: 64px;
+    width: 213px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 106.5px);
+    z-index: 1031;
+
+}
+
+.barbacoaj a {
+    font-size: 0;
+}
+
+
+.fondoceleste {
+    background-color: #37bbed;
+}
+
+.fondoazul {
+    background-color: #157ba1;
+}
+
+.btn {
+    background-color: #37bbed !important;
+    color: white !important;
+    border:none !important;
+    font-family: 'Roboto Light';
+}
+
+.btn:hover {
+    background-color: #157ba1 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn:active {
+    background-color: #37bbed !important;
+    color: white !important;
+    border:none;
+}
+
+.btn:visited {
+    background-color: #37bbed !important;
+    color: white !important;
+}
+
+.card-title {
+    font-family: 'Encode Sans';
+}
+
+.card-text {
+    font-family: 'Roboto Light';
+}
+
+.card-img-top {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.redes {
+    list-style: none;
+}
+
+.ig {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../OBRAS/IMAGENES/instagram.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+.tk {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../OBRAS/IMAGENES/tiktok.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+.spt {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../OBRAS/IMAGENES/spotify.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+.yt {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../OBRAS/IMAGENES/youtube.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+.licencia {
+    font-size: 0.7em;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../OBRAS/IMAGENES/bars-svgrepo-com.svg);
+    color:#157ba1;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Encode Sans';
+}
+
+.nav-link:hover {
+    color:#157ba1;
+}
+
+.oculto {
+    display: none;
+}
+
+#palabras {
+    display:none;
+    padding-top: 4em;
+    font-family: 'Roboto Light';
+}
+
+h2 {
+    font-family: 'Encode Sans';
+}
+
+a {
+    color:#157ba1;
+}
+
+a:hover {
+    color: #ed9537;
+}
+
+#palabras:target {
+    display: block;
+    
+}
+
+#letra {
+    display: none;
+    padding-top: 4em;
+    font-family: 'Roboto Light';
+}
+
+#letra:target {
+    display:block;
+}
+
+.partes {
+    padding-top: 4em;
+}
+
+#cifrado {
+    display: none;
+}
+
+#cifrado:target {
+    display: block;
+}
+
+#clarinete {
+    display: none;
+}
+
+#clarinete:target {
+    display: block;
+}
+
+#saxo {
+    display:none;
+}
+
+#saxo:target {
+    display:block;
+}
+
+#trompeta {
+    display: none;
+}
+
+#trompeta:target {
+    display:block;
+}
+
+#trombonI {
+    display: none;
+}
+
+#trombonI:target {
+    display: block;
+}
+
+#trombonII {
+    display: none;
+}
+
+#trombonII:target {
+    display: block;
+}
+
+#teclado {
+    display: none;
+}
+
+#teclado:target {
+    display: block;
+}
+
+#bateria {
+    display: none;
+}
+
+#bateria:target {
+    display:block;
+}
+
+.palabras {
+    font-family: "Roboto Light";
+}
+
+@media screen and (min-width: 992px) {
+
+    .barbacoaj {
+        left: 0;
+    }
+
+}
+
+.construccion {
+    background-color: #50535c;
+    background-image: url(../OBRAS/IMAGENES/uocrapresente.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-blend-mode: screen;
+    height: 674px;
+    margin: auto;
+    font-family: "Encode Sans";
+    font-weight: 800;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black;
+    color: #ffffff;
+    text-align: center;
+}
+
+.construccion a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    margin: 0 auto;
+    background-image: url(../OBRAS/IMAGENES/iconovolver-11.svg);
+    font-size: 0;
+}
+
+.construccion a:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+    margin: 0 auto;
+    background-image: url(../OBRAS/IMAGENES/iconovolver-12.svg);
+    font-size: 0;
+}
