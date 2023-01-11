@@ -474,6 +474,7 @@ header {
 
 .card-text {
     font-family: 'Roboto Light';
+    text-shadow: 1px 1px black;
 }
 
 .card-img-top {
@@ -567,6 +568,7 @@ header {
 
 h2 {
     font-family: 'Encode Sans';
+    text-shadow: 1px 1px 2px black;
 }
 
 a {
