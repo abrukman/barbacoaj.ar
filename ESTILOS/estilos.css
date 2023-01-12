@@ -470,16 +470,12 @@ header {
 
 .card-title {
     font-family: 'Encode Sans';
+    text-shadow: 1px 1px 2px black;
 }
 
 .card-text {
     font-family: 'Roboto Light';
     text-shadow: 1px 1px black;
-}
-
-.card-img-top {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
 }
 
 .redes {
@@ -568,7 +564,7 @@ header {
 
 h2 {
     font-family: 'Encode Sans';
-    text-shadow: 1px 1px 2px black;
+    
 }
 
 a {
