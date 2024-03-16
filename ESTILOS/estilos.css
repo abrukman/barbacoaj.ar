@@ -413,6 +413,11 @@ footer {
 
 }*/
 
+::selection {
+    color: white;
+    background-color: #157ba1;
+}
+
 header {
     height: 4em;
 }
@@ -470,7 +475,7 @@ header {
 
 .card-title {
     font-family: 'Encode Sans';
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px black;
 }
 
 .card-text {
