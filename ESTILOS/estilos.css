@@ -623,6 +623,22 @@ a:hover {
     display:block;
 }
 
+#saxoalto {
+    display:none;
+}
+
+#saxoalto:target {
+    display:block;
+}
+
+#saxotenor {
+    display:none;
+}
+
+#saxotenor:target {
+    display:block;
+}
+
 #trompeta {
     display: none;
 }
